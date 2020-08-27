@@ -2,32 +2,10 @@
 *{
   text-align: center;
 }
-#pic{
-  border:2px,solid,black;
-  border-radius:20%;
-}
-.jumbotron{
-  color:white;
-  animation-name: background;
-  animation-duration: 9s;
-  animation-iteration-count: infinite;
-  animation-delay: 0s;
-  background-size: cover;
-  animation-timing-function: linear;
-  
-}
-
-  #ekansh{
-    border:2px,solid,black;
-    border-radius:10%;
-  }
-  #end h3{
-    letter-spacing: 2px;
-  }
  
  #navbar {
     background: linear-gradient(254deg, #ee4266, #c4cbca, #3cbbb1);
-    background-size: 600% 600%;
+    background-size: 900% 900%;
 
     -webkit-animation: AnimationName 15s ease infinite;
     -moz-animation: AnimationName 15s ease infinite;
@@ -50,13 +28,6 @@
     100%{background-position:0% 88%}
 }
 
-  .space{
-    margin: 5px;
-  }
-  /* .cards{
-    border: 2px solid grey;
-    border-radius:20%;
-  } */
 #rgb
   {
     background: linear-gradient(254deg, #ee4266, #c4cbca, #3cbbb1);
@@ -65,14 +36,4 @@
     -webkit-animation: AnimationName 15s ease infinite;
     -moz-animation: AnimationName 15s ease infinite;
     animation: AnimationName 15s ease infinite;
-}
-
-
-#form{
-  border: 1px solid white;
-  border-radius: 10%;
-}
-#lang{
-  justify-content: center;
-  text-align: center;
 }
