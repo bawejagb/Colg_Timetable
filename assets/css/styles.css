@@ -6,7 +6,7 @@
  #navbar {
     background: linear-gradient(254deg, #ee4266, #c4cbca, #3cbbb1);
     background-size: 900% 900%;
-
+    width: 100%;
     -webkit-animation: AnimationName 15s ease infinite;
     -moz-animation: AnimationName 15s ease infinite;
     animation: AnimationName 15s ease infinite;
