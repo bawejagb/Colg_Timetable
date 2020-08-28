@@ -27,13 +27,3 @@
     50%{background-position:100% 13%}
     100%{background-position:0% 88%}
 }
-
-#rgb
-  {
-    background: linear-gradient(254deg, #ee4266, #c4cbca, #3cbbb1);
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 15s ease infinite;
-    -moz-animation: AnimationName 15s ease infinite;
-    animation: AnimationName 15s ease infinite;
-}
