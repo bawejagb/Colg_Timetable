@@ -1,7 +1,6 @@
-notf_flag = 1;
 Notification.requestPermission().then(function(result) {
-  notf_flag = 1;
   });
+  
   var data =[[[8,50,"OS LAB","https://tiet.zoom.us/my/CSED6/"], [11,20,"DS Lecture","https://tiet.zoom.us/my/CSED15/"]],
             [[9,40,"OS Lecture","https://tiet.zoom.us/my/CSED6/"],[10,30,"DMS Lecture","https://tiet.zoom.us/my/csed4/"],[11,20,"NA Lecture","https://tiet.zoom.us/my/tietsom6/"],[14,40,"DS LAB","https://tiet.zoom.us/my/csed5/"]],
             [[9,40,"CAO Lecture","https://tiet.zoom.us/my/csed11/"],[10,30,"NA Lecture","https://tiet.zoom.us/my/tietsom5/"],[11,20,"DS Lecture","https://tiet.zoom.us/my/CSED12/"],[16,20,"OS Lecture","https://tiet.zoom.us/my/CSED3/"]],
@@ -15,10 +14,10 @@ Notification.requestPermission().then(function(result) {
       m = d.getMinutes();
       day = d.getDay();
       checkAlert(h, m, day);
-      setTimeout(check, 2000);
+      setTimeout(check, 5000);
     }
     else {
-        setTimeout(check, 2000); // check again in a second
+        setTimeout(check, 5000); // check again in a 2 second
     }
 }
 function NotfFunction(msg)
@@ -40,17 +39,17 @@ check();
       var data1 = data[day-1];
       for(var i = 0; i < data1.length; i++)
       {
-        if(h == data1[i][0] && m >= data1[i][1] - 5 && m <= data1[i][1] + 3 && flag == 0)
+        if(h == data1[i][0] && m >= data1[i][1] - 5 && m <= data1[i][1] + 5 && flag == 0)
         {
           console.log(data1[i][2] + " Start!");
-          console.log(notf_flag);
-          if (notf_flag == 1)
+          console.log(Notification.permission);
+          if (Notification.permission === 'granted')
           {
             NotfFunction(data1[i]);
           }
           flag = 1;
         }
-        else if (h == data1[i][0] && m >= data1[i][1] + 5 && flag == 1)
+        else if (h == data1[i][0] && m > data1[i][1] + 6 && flag == 1)
         {
           flag = 0;
           console.log(data1[i][2] + " Over!");
