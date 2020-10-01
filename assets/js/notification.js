@@ -46,8 +46,9 @@ check();
           if (Notification.permission === 'granted')
           {
             NotfFunction(data1[i]);
+            flag = 1;
           }
-          flag = 1;
+          
         }
         else if (h == data1[i][0] && m > data1[i][1] + 6 && flag == 1)
         {
