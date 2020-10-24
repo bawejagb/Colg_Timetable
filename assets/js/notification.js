@@ -50,7 +50,7 @@ check();
           }
           
         }
-        else if (h == data1[i][0] && m > data1[i][1] + 6 && flag == 1)
+        else if (h == data1[i][0] && m >= data1[i][1] + 6 && m <= data1[i][1] + 8 && flag == 1)
         {
           flag = 0;
           console.log(data1[i][2] + " Over!");
