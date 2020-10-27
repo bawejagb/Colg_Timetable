@@ -27,3 +27,23 @@
     50%{background-position:100% 13%}
     100%{background-position:0% 88%}
 }
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+    #colr {
+        color: black;
+    }
+}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color:#000000d1;
+        color: white;
+    }
+    #colr {
+        color: white;
+    }
+}
