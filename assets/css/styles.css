@@ -2,7 +2,12 @@
 *{
   text-align: center;
 }
- 
+.item {
+    width: 50%;
+    float: center;
+    margin: 3px;
+    padding: 3px;
+}
  #navbar {
     background: linear-gradient(254deg, #ee4266, #c4cbca, #3cbbb1);
     background-size: 600% 600%;
@@ -46,4 +51,7 @@
     #colr {
         color: white;
     }
+}
+#colr, .table-warning, .table-success  {
+    font-size: 1.5vw;
 }
