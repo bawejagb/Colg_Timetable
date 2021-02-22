@@ -1,11 +1,11 @@
 Notification.requestPermission().then(function(result) {
   });
-  
-  var data =[[[8,50,"OS LAB","https://tiet.zoom.us/my/CSED6/"], [11,20,"DS Lecture","https://tiet.zoom.us/my/CSED15/"]],
-            [[9,40,"OS Lecture","https://tiet.zoom.us/my/CSED6/"],[10,30,"DMS Lecture","https://tiet.zoom.us/my/csed4/"],[11,20,"NA Lecture","https://tiet.zoom.us/my/tietsom6/"],[14,40,"DS LAB","https://tiet.zoom.us/my/csed5/"]],
-            [[9,40,"CAO Lecture","https://tiet.zoom.us/my/csed11/"],[10,30,"NA Lecture","https://tiet.zoom.us/my/tietsom5/"],[11,20,"DS Lecture","https://tiet.zoom.us/my/CSED12/"],[16,20,"OS Lecture","https://tiet.zoom.us/my/CSED3/"]],
-            [[8,0,"DMS Lecture","https://tiet.zoom.us/my/csed2/"],[8,50,"PC Lecture","https://tiet.zoom.us/my/CSED16/"],[9,40,"CAO Lecture","https://tiet.zoom.us/my/csed10/"],[10,30,"NA Lecture","https://tiet.zoom.us/my/tietsom6/"],[14,40,"NA LAB","https://tiet.zoom.us/my/tietsom6/"],[16,20,"DMS LAB","https://tiet.zoom.us/my/csed4/"]],
-            [[8,0,"DS Lecture","https://tiet.zoom.us/my/CSED2/"],[8,50,"DMS Lecture","https://tiet.zoom.us/my/csed1/"],[9,40,"OS Lecture","https://tiet.zoom.us/my/CSED2/"],[12,10,"PC LAB","https://tiet.zoom.us/my/csed18/"],[13,50,"CAO Lecture","https://tiet.zoom.us/my/csed4/"]]]; 
+  var base = "https://tiet.zoom.us/my/"
+  var data =[[[8,50,"OS LAB","CSED6/"], [11,20,"DS Lecture","CSED15/"]],
+            [[9,40,"OS Lecture","CSED6/"],[10,30,"DMS Lecture","csed4/"],[11,20,"NA Lecture","tietsom6/"],[14,40,"DS LAB","csed5/"]],
+            [[9,40,"CAO Lecture","csed11/"],[10,30,"NA Lecture","tietsom5/"],[11,20,"DS Lecture","CSED12/"],[16,20,"OS Lecture","CSED3/"]],
+            [[8,0,"DMS Lecture","csed2/"],[8,50,"PC Lecture","CSED16/"],[9,40,"CAO Lecture","csed10/"],[10,30,"NA Lecture","tietsom6/"],[14,40,"NA LAB","tietsom6/"],[16,20,"DMS LAB","csed4/"]],
+            [[8,0,"DS Lecture","CSED2/"],[8,50,"DMS Lecture","csed1/"],[9,40,"OS Lecture","CSED2/"],[12,10,"PC LAB","csed18/"],[13,50,"CAO Lecture","csed4/"]]]; 
   var flag = 0, d, m, day, h = 7;
   var check = function(){
     if(h < 18){
@@ -23,7 +23,7 @@ Notification.requestPermission().then(function(result) {
 function NotfFunction(msg)
 {
   var nof = new Notification(msg[2], {
-    body : "AT: "+msg[0]+':'+msg[1]+"\nClick here: "+msg[3],
+    body : "AT: "+msg[0]+':'+msg[1]+"\nClick here: "+base+msg[3],
     icon : "assets/images/icon.ico"
   });
   nof.onclick = function(event) {
