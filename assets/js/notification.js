@@ -7,7 +7,7 @@ $.ajax({
   success: function(data) {
     data_bs = data;
     drawRow(data);
-    console.log(data);
+    //console.log(data);
     check();
   }
 });
@@ -24,18 +24,17 @@ function drawRow(data) {
         row.append($("<td id='colr' scope='row'>" + "-" + "</td>")); 
       else if(dat.length > 2){
         var dk = dat.split(",");
-        if(dk[0].search("LAB") == -1)
-        row.append($("<td class='table-warning'>" + "<a href="+base+dk[1]+" target='_blank'><b>"+dk[0]+"</b></a></td>")); 
-        else
-        row.append($("<td class='table-success' rowspan='2'style='vertical-align:middle'>" + "<a href="+base+dk[1]+" target='_blank'><b>"+dk[0]+"</b></a></td>"));
+        if(dk[0].search("LAB") == -1){
+        row.append($("<td class='table-warning'>" + "<a href="+base+dk[1]+ 
+        " target='_blank'><b>"+dk[0]+"</b></a></td>")); }
+        else{
+        row.append($("<td class='table-success' rowspan='2'style='vertical-align:middle'>" +
+         "<a href="+base+dk[1]+" target='_blank'><b>"+dk[0]+"</b></a></td>"));}
       }
-      
     }
-}
   }
-  
-Notification.requestPermission().then(function(result) {
-  });  
+}
+Notification.requestPermission().then(function(result) {});  
   function fitdata(day){
     for(var i = 0; i < data_bs.length; i++){
       filter_data[i] = data_bs[i][day];
@@ -49,7 +48,7 @@ Notification.requestPermission().then(function(result) {
       m = d.getMinutes();
       day = d.getDay();
       fitdata(day);
-      console.log(filter_data);
+      //console.log(filter_data);
       checkAlert(h, m, day);
       setTimeout(check, 5000);
     }
@@ -69,33 +68,30 @@ function NotfFunction(ref,msg)
   }
 }
 
- function checkAlert(h, m, day) {
-  
-   if ( day > 0 && day <= 5)
-   {
-      //var data1 = data_bs[day-1];
-      var real_time = h*60 + m;
-      for(var i = 0; i < filter_data.length; i++)
-      {
-        if(filter_data[i].length > 3){
-          var time_val = (8*60)+i*50;
-          if(real_time >= time_val - 5 && real_time <= time_val + 5 && flag == 0)
+function checkAlert(h, m, day) {
+  if ( day > 0 && day <= 5)
+  {
+    var real_time = h*60 + m;
+    for(var i = 0; i < filter_data.length; i++)
+    {
+      if(filter_data[i].length > 3){
+        var time_val = (8*60)+i*50;
+        if(real_time >= time_val - 5 && real_time <= time_val + 5 && flag == 0)
+        {
+          console.log(filter_data[i].split(",")[0] + " Start!");
+          console.log(Notification.permission);
+          if (Notification.permission === 'granted')
           {
-            console.log(filter_data[i].split(",")[0] + " Start!");
-            console.log(Notification.permission);
-            if (Notification.permission === 'granted')
-            {
-              NotfFunction(i,filter_data[i].split(","));
-              flag = 1;
-            }
+            NotfFunction(i,filter_data[i].split(","));
+            flag = 1;
           }
-          else if (real_time >= time_val + 6 && real_time <= time_val + 8 && flag == 1)
-          {
-            flag = 0;
-            console.log(filter_data[i].split(",")[0] + " Over!");
-          }
+        }
+        else if (real_time >= time_val + 6 && real_time <= time_val + 8 && flag == 1)
+        {
+          flag = 0;
+          console.log(filter_data[i].split(",")[0] + " Over!");
         }
       }
     }
-  
   }
+}
