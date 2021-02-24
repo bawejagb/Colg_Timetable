@@ -37,9 +37,11 @@ check();
    if ( day > 0 && day <= 5)
    {
       var data1 = data[day-1];
+      var real_time = h*60 + m;
       for(var i = 0; i < data1.length; i++)
       {
-        if(h == data1[i][0] && m >= data1[i][1] - 5 && m <= data1[i][1] + 5 && flag == 0)
+        var time_val = data1[i][0]*60 + data1[i][1];
+        if(real_time >= time_val - 5 && real_time <= time_val + 5 && flag == 0)
         {
           console.log(data1[i][2] + " Start!");
           console.log(Notification.permission);
@@ -50,7 +52,7 @@ check();
           }
           
         }
-        else if (h == data1[i][0] && m >= data1[i][1] + 6 && m <= data1[i][1] + 8 && flag == 1)
+        else if (real_time >= time_val + 6 && real_time <= time_val + 8 && flag == 1)
         {
           flag = 0;
           console.log(data1[i][2] + " Over!");
