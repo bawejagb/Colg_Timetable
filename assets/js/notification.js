@@ -17,7 +17,7 @@ Notification.requestPermission().then(function(result) {
       setTimeout(check, 5000);
     }
     else {
-        setTimeout(check, 5000); // check again in a 2 second
+        setTimeout(check, 5000); // check again in a 5 second
     }
 }
 function NotfFunction(msg)
@@ -28,7 +28,7 @@ function NotfFunction(msg)
   });
   nof.onclick = function(event) {
     event.preventDefault(); // prevent the browser from focusing the Notification's tab
-    window.open(msg[3], '_blank');
+    window.open(base+msg[3], '_blank');
   }
 }
 check();
