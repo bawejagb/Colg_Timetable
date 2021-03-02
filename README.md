@@ -12,6 +12,9 @@
 This is the repo of CSE class **timetable** which will give **notification** 5 mins before the the class start with the class link to join.
 
 ---
+**Resources:** Google excel sheet API - **https://sheetdb.io/apis**
+
+---
 **Note:** Notification will only come when you allow the permission which will ask on opening website.
 
 <img height=100px src="./assets/images/note1.jpg">
