@@ -1,5 +1,16 @@
 var data_bs = [],filter_data= [];
-$.ajax({
+data_bs = [{"Time":"8:00 - 8:50","1":"-","2":"-","3":"-","4":"-","5":"Dsn & Algo LAB CS4,CSED16/"},
+          {"Time":"8:50 - 9:40","1":"-","2":"-","3":"-","4":"Comp Net Lecture,CSED13/","5":""},
+          {"Time":"9:40 - 10:30","1":"-","2":"-","3":"-","4":"Dsn & Algo Lecture,CSED14/","5":"DBMS Lecture,CSED5/"},
+          {"Time":"10:30 - 11:20","1":"-","2":"-","3":"-","4":"Optm Tech Lecture,tietsom2/","5":"-"},
+          {"Time":"11:20 - 12:10","1":"Soft Engg LAB CS4,CSED13/","2":"Comp Net LAB CS4,CSED15/","3":"Optm Tech LAB CS4,tietsom2/","4":"-","5":"-"},
+          {"Time":"12:10 - 1:00","1":"","2":"","3":"","4":"-","5":"-"},
+          {"Time":"1:00 - 1:50","1":"-","2":"-","3":"A-I Lecture,CSED3/","4":"-","5":"DBMS LAB CS4,CSED6/"},
+          {"Time":"1:50 - 2:40","1":"DBMS Lecture,CSED13/","2":"Optm Tech Lecture,tietsom1/","3":"Optm Tech Lecture,tietsom1/","4":"DBMS Lecture,CSED13/","5":""},
+          {"Time":"2:40 - 3:30","1":"A-I Lecture,CSED3/","2":"Comp Net Lecture,CSED14/","3":"Dsn & Algo Lecture,CSED16/","4":"A-I Lecture,CSED16/","5":"-"},
+          {"Time":"3:30 - 4:20","1":"A-I LAB CS4,CSED13","2":"Soft Engg Lecture,CSED5/","3":"Soft Engg Lecture,CSED5/","4":"Soft Engg Lecture,CSED12/","5":"-"},
+          {"Time":"4:20 - 5:10","1":"","2":"Dsn & Algo Lecture,CSED9/","3":"-","4":"-","5":"-"}]
+/*$.ajax({
   url: 'https://sheetdb.io/api/v1/6tlzso8euumt3',
   type: "get",
   dataType: "json",
@@ -11,7 +22,10 @@ $.ajax({
     check();
   }
 });
+*/
 var base = "https://tiet.zoom.us/my/"
+drawRow(data_bs);
+check();
 function drawRow(data) {
   for(var i = 0; i < data.length; i++){
     var lst = data[i];
@@ -35,26 +49,26 @@ function drawRow(data) {
   }
 }
 Notification.requestPermission().then(function(result) {});  
-  function fitdata(day){
-    for(var i = 0; i < data_bs.length; i++){
-      filter_data[i] = data_bs[i][day];
-    }
+function fitdata(day){
+  for(var i = 0; i < data_bs.length; i++){
+    filter_data[i] = data_bs[i][day];
   }
-  var flag = 0, d, m, day, h = 7;
-  var check = function(){
-    if(h < 18){
-      d = new Date();
-      h = d.getHours();
-      m = d.getMinutes();
-      day = d.getDay();
-      fitdata(day);
-      //console.log(filter_data);
-      checkAlert(h, m, day);
-      setTimeout(check, 5000);
-    }
-    else {
-        setTimeout(check, 5000); // check again in a 5 second
-    }
+}
+var flag = 0, d, m, day, h = 7;
+function check(){
+  if(h < 18){
+    d = new Date();
+    h = d.getHours();
+    m = d.getMinutes();
+    day = d.getDay();
+    fitdata(day);
+    //console.log(filter_data);
+    checkAlert(h, m, day);
+    setTimeout(check, 5000);
+  }
+  else {
+      setTimeout(check, 5000); // check again in a 5 second
+  }
 }
 function NotfFunction(ref,msg)
 {
