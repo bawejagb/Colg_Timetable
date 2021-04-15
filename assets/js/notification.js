@@ -10,7 +10,7 @@ data_bs = [{"Time":"8:00 - 8:50","1":"-","2":"-","3":"-","4":"-","5":"Dsn & Algo
             {"Time":"2:40 - 3:30","1":"A-I Lecture,CSED3/","2":"Comp Net Lecture,CSED14/","3":"-","4":"A-I Lecture,CSED16/","5":"-"},
             {"Time":"3:30 - 4:20","1":"A-I LAB CS4,CSED13","2":"Soft Engg Lecture,CSED5/","3":"Soft Engg Lecture,CSED5/","4":"Soft Engg Lecture,CSED12/","5":"-"},
             {"Time":"4:20 - 5:10","1":"","2":"-","3":"-","4":"-","5":"-"},
-            {"Time":"5:10 - 6:00","1":"-","2":"Dsn & Algo Lecture,CSED1/","3":"Dsn & Algo Lecture,CSED1/","4":"Dsn & Algo Lecture,CSED1/","5":"-"}]
+            {"Time":"5:10 - 6:00","1":"-","2":"Dsn & Algo Lecture,CSED1/","3":"Dsn & Algo Lecture,CSED1/","4":"-","5":"Dsn & Algo Lecture,CSED1/"}]
 /*$.ajax({
   url: 'https://sheetdb.io/api/v1/6tlzso8euumt3',
   type: "get",
