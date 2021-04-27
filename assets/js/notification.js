@@ -3,7 +3,7 @@ data_bs = [{"Time":"8:00 - 8:50","1":"-","2":"-","3":"-","4":"-","5":"Dsn & Algo
             {"Time":"8:50 - 9:40","1":"-","2":"-","3":"-","4":"Comp Net Lecture,CSED13/","5":""},
             {"Time":"9:40 - 10:30","1":"-","2":"-","3":"-","4":"-","5":"DBMS Lecture,CSED5/"},
             {"Time":"10:30 - 11:20","1":"-","2":"-","3":"-","4":"Optm Tech Lecture,tietsom2/","5":"-"},
-            {"Time":"11:20 - 12:10","1":"Soft Engg LAB CS4,CSED13/","2":"Comp Net LAB CS4,CSED15/","3":"Optm Tech LAB CS4,tietsom2/","4":"-","5":"-"},
+            {"Time":"11:20 - 12:10","1":"Soft Engg LAB CS4,CSED13/","2":"Comp Net LAB CS4,CSED14/","3":"Optm Tech LAB CS4,tietsom2/","4":"-","5":"-"},
             {"Time":"12:10 - 1:00","1":"","2":"","3":"","4":"-","5":"-"},
             {"Time":"1:00 - 1:50","1":"-","2":"-","3":"A-I Lecture,CSED3/","4":"-","5":"DBMS LAB CS4,CSED6/"},
             {"Time":"1:50 - 2:40","1":"DBMS Lecture,CSED13/","2":"Optm Tech Lecture,tietsom1/","3":"Optm Tech Lecture,tietsom1/","4":"DBMS Lecture,CSED13/","5":""},
