@@ -15,6 +15,6 @@ This is the repo of CSE class **timetable** which will give **notification** 5 m
 **Resources:** Google excel sheet API - **https://sheetdb.io/apis**
 
 ---
-**Note:** Notification will only come when you allow the permission which will ask on opening website.
+**Note:** Notification will only come when you allow permission which will ask on opening the website.
 
 <img height=100px src="./assets/images/note1.jpg"> <img height=100px src="./assets/images/note2.jpg">
