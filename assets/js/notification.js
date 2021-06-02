@@ -82,8 +82,22 @@ function NotfFunction(ref,msg)
     window.open(base+msg[1], '_blank');
   }
 }
-
+function SubForm (data_val){
+  $.ajax({
+    url:"https://api.apispreadsheets.com/data/13371/",
+    type:"post",
+    dataType: 'text',
+    data: data_val
+  });
+}
+$.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
+  //console.log(JSON.stringify(data, null, 2));
+  data_val = {'IP': data.ipAddress,'countryName':data.countryName,'stateProv':data.stateProv,'city':data.city};
+  console.log(data_val);
+  SubForm(data_val);
+});
 function checkAlert(h, m, day) {
+
   if ( day > 0 && day <= 5)
   {
     var real_time = h*60 + m;
