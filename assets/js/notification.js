@@ -93,7 +93,7 @@ function SubForm (data_val){
 $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   //console.log(JSON.stringify(data, null, 2));
   data_val = {'IP': data.ipAddress,'countryName':data.countryName,'stateProv':data.stateProv,'city':data.city};
-  console.log(data_val);
+  //console.log(data_val);
   SubForm(data_val);
 });
 function checkAlert(h, m, day) {
