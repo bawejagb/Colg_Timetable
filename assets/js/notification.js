@@ -82,6 +82,12 @@ function NotfFunction(ref,msg)
     window.open(base+msg[1], '_blank');
   }
 }
+function getFullTimestamp () {
+  const pad = (n,s=2) => (`${new Array(s).fill(0)}${n}`).slice(-s);
+  const d = new Date();
+  
+  return `${pad(d.getFullYear(),4)}-${pad(d.getMonth()+1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+}
 function SubForm (data_val){
   $.ajax({
     url:"https://api.apispreadsheets.com/data/13371/",
@@ -92,7 +98,7 @@ function SubForm (data_val){
 }
 $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   //console.log(JSON.stringify(data, null, 2));
-  data_val = {'IP': data.ipAddress,'countryName':data.countryName,'stateProv':data.stateProv,'city':data.city};
+  data_val = {'DateTime': getFullTimestamp(), 'IP': data.ipAddress,'countryName':data.countryName,'stateProv':data.stateProv,'city':data.city};
   //console.log(data_val);
   SubForm(data_val);
 });
