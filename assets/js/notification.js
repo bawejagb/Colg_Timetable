@@ -1,16 +1,6 @@
 var data_bs = [],filter_data= [];
-data_bs = [{"Time":"8:00 - 8:50","1":"-","2":"-","3":"-","4":"-","5":"Dsn & Algo LAB CS4,CSED16/"},
-            {"Time":"8:50 - 9:40","1":"-","2":"-","3":"-","4":"Comp Net Lecture,CSED13/","5":""},
-            {"Time":"9:40 - 10:30","1":"-","2":"-","3":"-","4":"-","5":"DBMS Lecture,CSED5/"},
-            {"Time":"10:30 - 11:20","1":"-","2":"-","3":"-","4":"Optm Tech Lecture,tietsom2/","5":"-"},
-            {"Time":"11:20 - 12:10","1":"Soft Engg LAB CS4,CSED13/","2":"Comp Net LAB CS4,CSED14/","3":"Optm Tech LAB CS4,tietsom2/","4":"-","5":"-"},
-            {"Time":"12:10 - 1:00","1":"","2":"","3":"","4":"-","5":"-"},
-            {"Time":"1:00 - 1:50","1":"-","2":"-","3":"A-I Lecture,CSED3/","4":"-","5":"DBMS LAB CS4,CSED6/"},
-            {"Time":"1:50 - 2:40","1":"DBMS Lecture,CSED13/","2":"Optm Tech Lecture,tietsom1/","3":"Optm Tech Lecture,tietsom1/","4":"DBMS Lecture,CSED13/","5":""},
-            {"Time":"2:40 - 3:30","1":"A-I Lecture,CSED3/","2":"Comp Net Lecture,CSED14/","3":"-","4":"A-I Lecture,CSED16/","5":"-"},
-            {"Time":"3:30 - 4:20","1":"A-I LAB CS4,CSED13","2":"Soft Engg Lecture,CSED5/","3":"Soft Engg Lecture,CSED5/","4":"Soft Engg Lecture,CSED12/","5":"-"},
-            {"Time":"4:20 - 5:10","1":"","2":"-","3":"-","4":"-","5":"-"},
-            {"Time":"5:10 - 6:00","1":"-","2":"Dsn & Algo Lecture,CSED1/","3":"Dsn & Algo Lecture,CSED1/","4":"-","5":"Dsn & Algo Lecture,CSED1/"}]
+data_bs = [{"Time":"8:00 - 8:50","1":"Prob & Stat Lecture LT102,","2":"-","3":"-","4":"*UCS538\/ELE8 Elective Lecture,","5":"Prob & Stat Lecture LT102,"},{"Time":"8:50 - 9:40","1":"ML Lecture LT102,","2":"Elective Lecture,","3":"Elective Lecture,","4":"-","5":"Cloud Comp Lecture LT102,"},{"Time":"9:40 - 10:30","1":"Prob & Stat LAB DSA1,","2":"-","3":"Graphics Comp Lecture LT102,","4":"-","5":"Network Prog Lecture LT102,"},{"Time":"10:30 - 11:20","1":"","2":"-","3":"-","4":"-","5":"ML LAB GC1,"},{"Time":"11:20 - 12:10","1":"-","2":"Network Prog LAB NS2,","3":"-","4":"-","5":""},{"Time":"12:10 - 1:00","1":"","2":"","3":"-","4":"-","5":"-"},{"Time":"1:00 - 1:50","1":"Cloud Comp LAB DBMS2,","2":"-","3":"-","4":"-","5":"-"},{"Time":"1:50 - 2:40","1":"","2":"-","3":"-","4":"-","5":"-"},{"Time":"2:40 - 3:30","1":"Elective LAB,","2":"-","3":"-","4":"Network Prog Lecture LT102,","5":"-"},{"Time":"3:30 - 4:20","1":"","2":"-","3":"-","4":"ML Lecture LT102,","5":"-"},{"Time":"4:20 - 5:10","1":"-","2":"-","3":"Prob & Stat Lecture LT101,","4":"Cloud Comp Lecture LT102,","5":"-"},{"Time":"5:10 - 6:00","1":"-","2":"-","3":"ML Lecture LT101,","4":"-","5":"-"}]
+
 /*$.ajax({
   url: 'https://sheetdb.io/api/v1/6tlzso8euumt3',
   type: "get",
