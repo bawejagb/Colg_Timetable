@@ -1,5 +1,16 @@
 var data_bs = [],filter_data= [];
-data_bs = [{"Time":"8:00 - 8:50","1":"Prob & Stat Lecture LT102,","2":"COE ML Lecture LT101","3":"-","4":"Data Science LT403,","5":"Prob & Stat Lecture LT102,"},{"Time":"8:50 - 9:40","1":"ML Lecture LT102,","2":"Elective Lecture,","3":"Elective Lecture,","4":"-","5":"Cloud Comp Lecture LT102,"},{"Time":"9:40 - 10:30","1":"Prob & Stat LAB DSA1,","2":"-","3":"COE ML Lecture LT101","4":"COE ML Lecture LT101","5":"Network Prog Lecture LT102,"},{"Time":"10:30 - 11:20","1":"","2":"-","3":"-","4":"-","5":"ML LAB GC1,"},{"Time":"11:20 - 12:10","1":"-","2":"Network Prog LAB NS2,","3":"-","4":"-","5":""},{"Time":"12:10 - 1:00","1":"-","2":"","3":"-","4":"-","5":"Data Science LT403/ Convo AI LT401,"},{"Time":"1:00 - 1:50","1":"Cloud Comp LAB DBMS2,","2":"-","3":"-","4":"-","5":"-"},{"Time":"1:50 - 2:40","1":"","2":"-","3":"-","4":"-","5":"-"},{"Time":"2:40 - 3:30","1":"Elective LAB,","2":"-","3":"-","4":"Network Prog Lecture LT102,","5":"-"},{"Time":"3:30 - 4:20","1":"","2":"-","3":"-","4":"ML Lecture LT102,","5":"-"},{"Time":"4:20 - 5:10","1":"-","2":"-","3":"Prob & Stat Lecture LT101,","4":"Cloud Comp Lecture LT102,","5":"-"},{"Time":"5:10 - 6:00","1":"-","2":"-","3":"ML Lecture LT101,","4":"-","5":"-"}]
+data_bs = [{"Time":"8:00 - 8:50","1":"Prob & Stat Lecture LT102,CSED2","2":"COE ML Lecture LT101,CSED3/","3":"-","4":"Data Science LT403,","5":"Prob & Stat Lecture LT102,CSED6"},
+            {"Time":"8:50 - 9:40","1":"ML Lecture LT102,","2":"Elective Lecture,","3":"Elective Lecture,","4":"-","5":"Cloud Comp Lecture LT102,"},
+            {"Time":"9:40 - 10:30","1":"Prob & Stat LAB DSA1,CSED4","2":"-","3":"COE ML Lecture LT101,CSED3/","4":"COE ML Lecture LT101,CSED4/","5":"Network Prog Lecture LT102,"},
+            {"Time":"10:30 - 11:20","1":"","2":"-","3":"-","4":"-","5":"ML LAB GC1,CSED3/"},
+            {"Time":"11:20 - 12:10","1":"-","2":"Network Prog LAB NS2,","3":"-","4":"-","5":""},
+            {"Time":"12:10 - 1:00","1":"-","2":"","3":"-","4":"-","5":"Data Science LT403/ Convo AI LT401,"},
+            {"Time":"1:00 - 1:50","1":"Cloud Comp LAB DBMS2,","2":"-","3":"-","4":"-","5":"-"},
+            {"Time":"1:50 - 2:40","1":"","2":"-","3":"-","4":"-","5":"-"},
+            {"Time":"2:40 - 3:30","1":"Elective LAB,","2":"-","3":"-","4":"Network Prog Lecture LT102,","5":"-"},
+            {"Time":"3:30 - 4:20","1":"","2":"-","3":"-","4":"ML Lecture LT102,","5":"-"},
+            {"Time":"4:20 - 5:10","1":"-","2":"-","3":"Prob & Stat Lecture LT101,CSED1","4":"Cloud Comp Lecture LT102,","5":"-"},
+            {"Time":"5:10 - 6:00","1":"-","2":"-","3":"ML Lecture LT101,","4":"-","5":"-"}]
 
 /*$.ajax({
   url: 'https://sheetdb.io/api/v1/6tlzso8euumt3',
