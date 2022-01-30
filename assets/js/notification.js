@@ -1,19 +1,19 @@
 var data_bs = [],filter_data= [];
-data_bs = [{"Time":"8:00 - 8:50","1":"Computer Graphics SS2 LAB,CSED17\/  ","2":"-","3":"-","4":"-","5":"-"},
-{"Time":"8:50 - 9:40","1":"","2":"DS Convo AI LT402 Lecture,CSED10\/","3":"DS Convo AI LT402 Lecture,CSED13\/","4":"Theory of Computation LT402 Lecture,CSED8\/","5":"-"},
-{"Time":"9:40 - 10:30","1":"-","2":"Theory of Computation LT401 Lecture,CSED14\/","3":"Quantum Computing GC2 LAB,CSED16\/","4":"Computer Graphics LT402 Lecture,CSED10\/","5":"NLP Convo AI GC1 LAB,CSED26/"},
-{"Time":"10:30 - 11:20","1":"-","2":"Computer Graphics LT401 Lecture,CSED14\/","3":"","4":"-","5":""},
-{"Time":"11:20 - 12:10","1":"Theory of Computation LT402 Lecture,CSED12\/","2":"Theory of Computation TUT,CSED11\/","3":"-","4":"-","5":"-"},
-{"Time":"12:10 - 1:00","1":"-","2":"NLP Convo AI LT403 Lecture,CSED14\/","3":"-","4":"Quantum Computing LT402 Lecture,CSED5\/","5":"-"},
-{"Time":"1:00 - 1:50","1":"Corporate Finance LP106 Lecture,shss4\/","2":"-","3":"-","4":"Corporate Finance LP106 Lecture,shss4\/","5":"-"},
-{"Time":"1:50 - 2:40","1":"Computer Graphics LT401 Lecture,CSED14\/","2":"-","3":"-","4":"-","5":"DS Convo AI GC1 LAB,CSED20\/"},
-{"Time":"2:40 - 3:30","1":"Quantum Computing LT401 Lecture,CSED14\/","2":"-","3":"-","4":"-","5":""},
-{"Time":"3:30 - 4:20","1":"-","2":"-","3":"-","4":"-","5":"Corporate Finance LP106 Lecture,shss4\/"},
-{"Time":"4:20 - 5:10","1":"NLP Convo AI LT403 Lecture,CSED14\/","2":"-","3":"-","4":"-","5":"Quantum Computing LT402 Lecture,CSED11\/"},
+data_bs = [{"Time":"8:00 - 8:50","1":"Computer Graphics SS2 LAB,my/CSED17\/  ","2":"-","3":"-","4":"-","5":"-"},
+{"Time":"8:50 - 9:40","1":"","2":"DS Convo AI LT402 Lecture,my/CSED10\/","3":"DS Convo AI LT402 Lecture,my/CSED13\/","4":"Theory of Computation LT402 Lecture,my/CSED8\/","5":"-"},
+{"Time":"9:40 - 10:30","1":"-","2":"Theory of Computation LT401 Lecture,my/CSED14\/","3":"Quantum Computing GC2 LAB,my/CSED16\/","4":"Computer Graphics LT402 Lecture,my/CSED10\/","5":"NLP Convo AI GC1 LAB,my/CSED26/"},
+{"Time":"10:30 - 11:20","1":"-","2":"Computer Graphics LT401 Lecture,my/CSED14\/","3":"","4":"-","5":""},
+{"Time":"11:20 - 12:10","1":"Theory of Computation LT402 Lecture,my/CSED12\/","2":"Theory of Computation TUT,my/CSED11\/","3":"-","4":"-","5":"-"},
+{"Time":"12:10 - 1:00","1":"-","2":"NLP Convo AI LT403 Lecture,my/CSED14\/","3":"-","4":"Quantum Computing LT402 Lecture,my/CSED5\/","5":"-"},
+{"Time":"1:00 - 1:50","1":"Corporate Finance LP106 Lecture,j/97972025030?pwd=SUkvL3puR1JpL2Jhd0dlbTVQTi95QT09\/","2":"-","3":"-","4":"Corporate Finance LP106 Lecture,j/97032616611?pwd=OEQxWHphWk1sSEFZcllDYzI4aUVNQT09\/","5":"-"},
+{"Time":"1:50 - 2:40","1":"Computer Graphics LT401 Lecture,my/CSED14\/","2":"-","3":"-","4":"-","5":"DS Convo AI GC1 LAB,my/CSED20\/"},
+{"Time":"2:40 - 3:30","1":"Quantum Computing LT401 Lecture,my/CSED14\/","2":"-","3":"-","4":"-","5":""},
+{"Time":"3:30 - 4:20","1":"-","2":"-","3":"-","4":"-","5":"Corporate Finance LP106 Lecture,j/4513640978?pwd=ZnJ1ZDQraW1kVEV5QnFWb3doWlowdz09\/"},
+{"Time":"4:20 - 5:10","1":"NLP Convo AI LT403 Lecture,my/CSED14\/","2":"-","3":"-","4":"-","5":"Quantum Computing LT402 Lecture,my/CSED11\/"},
 {"Time":"5:10 - 6:00","1":"-","2":"-","3":"-","4":"-","5":"-"}]
 
 
-var base = "https://tiet.zoom.us/my/"
+var base = "https://tiet.zoom.us/"
 drawRow(data_bs);
 check();
 function drawRow(data) {
