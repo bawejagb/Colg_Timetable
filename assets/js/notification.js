@@ -1,16 +1,16 @@
 var data_bs = [],filter_data= [];
-data_bs = [{"Time":"8:00 - 8:50","1":"Computer Graphics SS2 LAB,my/CSED17\/  ","2":"-","3":"-","4":"-","5":"-"},
-{"Time":"8:50 - 9:40","1":"","2":"DS Convo AI LT402 Lecture,my/CSED10\/","3":"DS Convo AI LT402 Lecture,my/CSED13\/","4":"Theory of Computation LT402 Lecture,my/CSED8\/","5":"-"},
-{"Time":"9:40 - 10:30","1":"-","2":"Theory of Computation LT401 Lecture,my/CSED14\/","3":"Quantum Computing GC2 LAB,my/CSED16\/","4":"Computer Graphics LT402 Lecture,my/CSED10\/","5":"NLP Convo AI GC1 LAB,my/CSED26/"},
-{"Time":"10:30 - 11:20","1":"-","2":"Computer Graphics LT401 Lecture,my/CSED14\/","3":"","4":"-","5":""},
-{"Time":"11:20 - 12:10","1":"Theory of Computation LT402 Lecture,my/CSED12\/","2":"Theory of Computation TUT,my/CSED11\/","3":"-","4":"-","5":"-"},
-{"Time":"12:10 - 1:00","1":"-","2":"NLP Convo AI LT403 Lecture,my/CSED14\/","3":"-","4":"Quantum Computing LT402 Lecture,my/CSED5\/","5":"-"},
-{"Time":"1:00 - 1:50","1":"Corporate Finance LP106 Lecture,j/97972025030?pwd=SUkvL3puR1JpL2Jhd0dlbTVQTi95QT09\/","2":"-","3":"-","4":"Corporate Finance LP106 Lecture,j/97032616611?pwd=OEQxWHphWk1sSEFZcllDYzI4aUVNQT09\/","5":"-"},
-{"Time":"1:50 - 2:40","1":"Computer Graphics LT401 Lecture,my/CSED14\/","2":"-","3":"-","4":"-","5":"DS Convo AI GC1 LAB,my/CSED20\/"},
-{"Time":"2:40 - 3:30","1":"Quantum Computing LT401 Lecture,my/CSED14\/","2":"-","3":"-","4":"-","5":""},
-{"Time":"3:30 - 4:20","1":"-","2":"-","3":"-","4":"-","5":"Corporate Finance LP106 Lecture,j/4513640978?pwd=ZnJ1ZDQraW1kVEV5QnFWb3doWlowdz09\/"},
-{"Time":"4:20 - 5:10","1":"NLP Convo AI LT403 Lecture,my/CSED14\/","2":"-","3":"-","4":"-","5":"Quantum Computing LT402 Lecture,my/CSED11\/"},
-{"Time":"5:10 - 6:00","1":"-","2":"-","3":"-","4":"-","5":"-"}]
+data_bs = [{"Time":"8:00 - 8:50","1":"-","2":"-","3":"ELECTIVE LAB","4":"-","5":"-"},
+{"Time":"8:50 - 9:40","1":"HUMANITIES FOR ENGINEERS - UHU005 L - LT401","2":"HUMANITIES FOR ENGINEERS - UHU005 P - LC2 LAB","3":"","4":"-","5":"-"},
+{"Time":"9:40 - 10:30","1":"COGNITIVE COMPUTING - UCS712 L - LT401","2":"","3":"-","4":"-","5":"-"},
+{"Time":"10:30 - 11:20","1":"COMPILER CONSTRUCTION - UCS802 - LT401","2":"-","3":"-","4":"-","5":"-"},
+{"Time":"11:20 - 12:10","1":"COMPILER CONSTRUCTION - UCS802 P - CG-2	LAB","2":"COMPILER CONSTRUCTION - UCS802 - LT401","3":"-","4":"-","5":"-"},
+{"Time":"12:10 - 1:00","1":"","2":"COGNITIVE COMPUTING - UCS712 L - LT401","3":"Elective","4":"-","5":"-"},
+{"Time":"1:00 - 1:50","1":"-","2":"-","3":"UCS-EL7-9 L - LP108","4":"-","5":"ELECTIVE LAB"},
+{"Time":"1:50 - 2:40","1":"-","2":"-","3":"-","4":"COMPILER CONSTRUCTION - UCS802 - LT401","5":""},
+{"Time":"2:40 - 3:30","1":"-","2":"-","3":"-","4":"HUMANITIES FOR ENGINEERS - UHU005 L - LT401","5":"-"},
+{"Time":"3:30 - 4:20","1":"UCS757P - IS2 LAB","2":"-","3":"-","4":"-","5":"-"},
+{"Time":"4:20 - 5:10","1":"","2":"-","3":"-","4":"-","5":"ELECTIVE LAB"},
+{"Time":"5:10 - 6:00","1":"-","2":"-","3":"-","4":"-"," 5":""}]
 
 
 var base = "https://tiet.zoom.us/"
